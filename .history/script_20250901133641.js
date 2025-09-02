@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lottieContainerComplete = document.getElementById('lottie-container-complete');
     
-    const completeAnimation = lottie.loadAnimation({
+    lottie.loadAnimation({
         container: lottieContainerComplete,
         renderer: 'svg',
         loop: true,

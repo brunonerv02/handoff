@@ -43,4 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: true,
         path: 'complete.json'
     });
+
+    completeAnimation.addEventListener('DOMLoaded', () => {
+        const svgElement = lottieContainerComplete.querySelector('svg');
+        if (svgElement) {
+            const width = svgElement.getAttribute('width');
+            const height = svgElement.getAttribute('height');
+            if (width && height) {
+                lottieContainerComplete.style.width = `${width}px`;
+                lottieContainerComplete.style.height = `${height}px`;
+            }
+        }
+    });
 });
